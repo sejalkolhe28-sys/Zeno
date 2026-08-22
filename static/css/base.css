@@ -1,0 +1,224 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root {
+
+    /* Colors */
+
+    --bg: #09090B;
+    --surface: #111118;
+    --surface-2: #181822;
+    --surface-3: #20202C;
+
+    --primary: #4F7CFF;
+    --primary-hover: #6A91FF;
+
+    --text: #F5F7FA;
+    --text-muted: #9CA3AF;
+
+    --border: rgba(255,255,255,.08);
+
+    --success: #22C55E;
+    --danger: #EF4444;
+    --warning: #F59E0B;
+
+    /* Glass */
+
+    --glass: rgba(255,255,255,.04);
+    --glass-border: rgba(255,255,255,.08);
+    --blur: 20px;
+
+    /* Radius */
+
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 22px;
+    --radius-xl: 30px;
+
+    /* Shadow */
+
+    --shadow:
+
+        0 8px 40px rgba(0,0,0,.45);
+
+    /* Sidebar */
+
+    --sidebar-width: 290px;
+
+    /* Header */
+
+    --header-height: 72px;
+
+    /* Composer */
+
+    --composer-height: 90px;
+
+    /* Animation */
+
+    --transition: .25s ease;
+
+}
+
+/* ==========================================
+   RESET
+========================================== */
+
+*,
+*::before,
+*::after{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+/* ==========================================
+   ELEMENTS
+========================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+input,
+textarea{
+
+    border:none;
+
+    outline:none;
+
+    font-family:inherit;
+
+    resize:none;
+
+    background:none;
+
+    color:var(--text);
+
+}
+
+textarea::placeholder{
+
+    color:var(--text-muted);
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#303040;
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#4A4A60;
+
+}
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================================
+   GLASS
+========================================== */
+
+.glass{
+
+    background:var(--glass);
+
+    backdrop-filter:blur(var(--blur));
+
+    border:1px solid var(--glass-border);
+
+}
+
+/* ==========================================
+   HIDDEN
+========================================== */
+
+.hidden{
+
+    display:none !important;
+
+}

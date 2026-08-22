@@ -1,0 +1,254 @@
+/* ==========================================
+   DEFAULT THEME
+========================================== */
+
+:root {
+
+    --bg: #09090B;
+    --surface: #111118;
+    --surface-2: #181822;
+    --surface-3: #20202C;
+
+    --primary: #4F7CFF;
+    --primary-hover: #6A91FF;
+
+    --text: #F5F7FA;
+    --text-muted: #9CA3AF;
+
+    --background-gradient:
+    radial-gradient(circle at 20% 20%, rgba(79,124,255,.18), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(124,58,237,.14), transparent 28%),
+    radial-gradient(circle at 50% 90%, rgba(6,182,212,.12), transparent 35%);
+    --bg-image: none;
+
+    --sidebar-bg: rgba(17,17,24,.82);
+
+--sidebar-border: rgba(255,255,255,.08);
+
+--sidebar-glow: rgba(79,124,255,.15);
+
+--sidebar-button: #4F7CFF;
+
+--sidebar-button-hover: #6A91FF;
+}
+
+/* ==========================================
+   MIDNIGHT
+========================================== */
+
+body.theme-midnight {
+
+    --bg: #09090B;
+    --surface: #111118;
+    --surface-2: #181822;
+    --surface-3: #20202C;
+
+    --primary: #4F7CFF;
+    --primary-hover: #6A91FF;
+
+    --bg-image: url("../assets/themes/midnight.png");
+
+    --background-gradient:
+    radial-gradient(circle at 20% 20%, rgba(79,124,255,.18), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(124,58,237,.14), transparent 28%),
+    radial-gradient(circle at 50% 90%, rgba(6,182,212,.12), transparent 35%);
+
+    --sidebar-bg: rgba(8,8,15,.82);
+
+--sidebar-border: rgba(79,124,255,.18);
+
+--sidebar-glow: rgba(79,124,255,.20);
+
+--sidebar-button:#4F7CFF;
+
+--sidebar-button-hover:#6A91FF;
+
+--theme-card: rgba(79,124,255,.22);
+--theme-card-border: rgba(79,124,255,.35);
+
+}
+
+/* ==========================================
+   OCEAN
+========================================== */
+
+body.theme-ocean {
+
+    --bg: #06121E;
+    --surface: #0E1B2C;
+    --surface-2: #15253A;
+    --surface-3: #203553;
+
+    --primary: #00B4FF;
+    --primary-hover: #34C6FF;
+
+    --bg-image: url("../assets/themes/ocean.png");
+
+    --background-gradient:
+    radial-gradient(circle at 20% 20%, rgba(0,180,255,.22), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(56,189,248,.18), transparent 28%),
+    radial-gradient(circle at 50% 90%, rgba(14,165,233,.14), transparent 35%);
+    
+    --sidebar-bg: rgba(6,25,42,.82);
+
+--sidebar-border: rgba(0,180,255,.20);
+
+--sidebar-glow: rgba(0,180,255,.25);
+
+--sidebar-button:#009BFF;
+
+--sidebar-button-hover:#34C6FF;
+
+--theme-card: rgba(0,180,255,.22);
+--theme-card-border: rgba(0,180,255,.35);
+
+}
+
+/* ==========================================
+   EMERALD
+========================================== */
+
+body.theme-emerald {
+
+    --bg: #07120D;
+    --surface: #102018;
+    --surface-2: #183126;
+    --surface-3: #214333;
+
+    --primary: #22C55E;
+    --primary-hover: #3DD97A;
+
+    --bg-image: url("../assets/themes/Elysium.png");
+
+    --background-gradient:
+    radial-gradient(circle at 20% 20%, rgba(34,197,94,.22), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(16,185,129,.18), transparent 28%),
+    radial-gradient(circle at 50% 90%, rgba(74,222,128,.14), transparent 35%);
+
+    --sidebar-bg: rgba(8,28,18,.82);
+
+--sidebar-border: rgba(34,197,94,.20);
+
+--sidebar-glow: rgba(34,197,94,.25);
+
+--sidebar-button:#16A34A;
+
+--sidebar-button-hover:#22C55E;
+
+--theme-card: rgba(34,197,94,.22);
+--theme-card-border: rgba(34,197,94,.35);
+
+}
+
+/* ==========================================
+   PURPLE
+========================================== */
+
+body.theme-purple {
+
+    --bg: #0C0817;
+    --surface: #161024;
+    --surface-2: #211736;
+    --surface-3: #2D214A;
+
+    --primary: #8B5CF6;
+    --primary-hover: #A27CFF;
+
+    --bg-image: url("../assets/themes/nebula.png");
+
+    --background-gradient:
+    radial-gradient(circle at 20% 20%, rgba(139,92,246,.22), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(168,85,247,.18), transparent 28%),
+    radial-gradient(circle at 50% 90%, rgba(192,132,252,.14), transparent 35%);
+
+    --sidebar-bg: rgba(18,12,35,.82);
+
+--sidebar-border: rgba(168,85,247,.22);
+
+--sidebar-glow: rgba(168,85,247,.28);
+
+--sidebar-button:#8B5CF6;
+
+--sidebar-button-hover:#A855F7;
+
+--theme-card: rgba(168,85,247,.22);
+--theme-card-border: rgba(168,85,247,.35);
+
+}
+
+/* ==========================================
+   SAKURA
+========================================== */
+
+body.theme-sakura {
+
+    --bg: #140D13;
+    --surface: #21161F;
+    --surface-2: #2D1F2B;
+    --surface-3: #3C2A39;
+
+    --primary: #EC4899;
+    --primary-hover: #F472B6;
+
+    --bg-image: url("../assets/themes/sakura.png");
+
+    --background-gradient:
+    radial-gradient(circle at 20% 20%, rgba(236,72,153,.22), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(244,114,182,.18), transparent 28%),
+    radial-gradient(circle at 50% 90%, rgba(251,182,206,.14), transparent 35%);
+
+    --sidebar-bg: rgba(40,18,35,.82);
+
+--sidebar-border: rgba(244,114,182,.22);
+
+--sidebar-glow: rgba(244,114,182,.25);
+
+--sidebar-button:#EC4899;
+
+--sidebar-button-hover:#F472B6;
+
+--theme-card: rgba(244,114,182,.22);
+--theme-card-border: rgba(244,114,182,.35);
+
+}
+
+/* ==========================================
+   LIGHT
+========================================== */
+
+body.theme-light {
+
+    --bg: #F5F7FB;
+    --surface: #FFFFFF;
+    --surface-2: #F0F2F7;
+    --surface-3: #E4E8F1;
+
+    --text: #111827;
+    --text-muted: #6B7280;
+
+    --border: rgba(0,0,0,.08);
+
+    --primary: #2563EB;
+    --primary-hover: #3B82F6;
+
+    --bg-image: url("../assets/themes/light.png");
+
+    --background-gradient:
+    radial-gradient(circle at 20% 20%, rgba(37,99,235,.10), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(59,130,246,.08), transparent 28%),
+    radial-gradient(circle at 50% 90%, rgba(96,165,250,.08), transparent 35%);
+
+    --sidebar-bg: rgba(103, 185, 239, 0.9);
+
+--sidebar-border: rgba(0,0,0,.08);
+
+--sidebar-glow: rgba(37,99,235,.18);
+
+--sidebar-button:#2563EB;
+
+--sidebar-button-hover:#3B82F6;
+
+--theme-card: rgba(255,255,255,.55);
+--theme-card-border: rgba(37,99,235,.20);
+
+}

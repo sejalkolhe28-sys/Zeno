@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Zeno AI</title>
+
+   <link rel="icon" 
+         href="{{ url_for('static', 
+         filename='assets/favicon.png') }}">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/sidebar.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/markdown.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/composer.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/themes.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}"> 
+
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="app">
+
+       <aside class="sidebar">
+
+    <div class="sidebar-header">
+
+        <div class="logo">
+            <img src="{{ url_for('static', filename='assets/logo.png') }}">
+            <span>Zeno</span>
+        </div>
+
+
+    </div>
+
+
+    <button id="new-chat-btn" class="new-chat">
+
+        <i class="fa-solid fa-plus"></i>
+
+        <span>New Chat</span>
+
+    </button>
+
+
+    <div class="recent-section">
+
+        <div class="section-title">
+
+            <span>Recent Chats</span>
+
+        </div>
+
+        <div
+            id="history-list"
+            class="history-list">
+
+        </div>
+
+        <button class="view-more">
+
+            View More
+
+            <i class="fa-solid fa-angle-down"></i>
+
+        </button>
+
+    </div>
+
+
+    <div class="sidebar-divider"></div>
+
+
+    <div class="theme-section">
+
+        <div class="section-title">
+
+            <span>Themes</span>
+
+        </div>
+
+        <div class="theme-list">
+
+            <button
+                class="theme-item"
+                data-theme="theme-midnight">
+
+                🌙
+                <span>Midnight</span>
+
+            </button>
+
+            <button
+                class="theme-item"
+                data-theme="theme-ocean">
+
+                🌊
+                <span>Ocean</span>
+
+            </button>
+
+            <button
+                class="theme-item"
+                data-theme="theme-emerald">
+
+                🍃
+                <span>Elysium</span>
+
+            </button>
+
+            <button
+                class="theme-item"
+                data-theme="theme-purple">
+
+                🪐
+                <span>Nebula</span>
+
+            </button>
+
+            <button
+                class="theme-item"
+                data-theme="theme-sakura">
+
+                🌸
+                <span>Sakura</span>
+
+            </button>
+
+            <button
+                class="theme-item"
+                data-theme="theme-light">
+
+                ☀️
+                <span>Light</span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</aside>
+
+  
+
+
+
+        <main class="chat-area">
+
+            <header class="chat-header">
+
+                <button class="menu-btn">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+                <h2>Zeno AI</h2>
+
+            </header>
+
+            <section
+                id="chat-box"
+                class="chat-box">
+
+                <div class="welcome">
+
+                  <img
+                  id="theme-logo"
+                  src="{{ url_for('static', filename='assets/logos/midnight.png') }}"
+                  alt="Zeno Logo">
+
+                    <h1>Hello, I'm Zeno</h1>
+
+                    <p>
+                        Ask me anything to get started.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <footer class="chat-input">
+
+                <button id="attach-btn">
+
+                    <i class="fa-solid fa-paperclip"></i>
+
+                </button>
+
+                <textarea
+                    id="message"
+                    rows="1"
+                    placeholder="Message Zeno..."></textarea>
+
+                <button id="mic-btn">
+
+                    <i class="fa-solid fa-microphone"></i>
+
+                </button>
+
+                <button id="send-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script src="{{ url_for('static', filename='js/ui.js') }}"></script>
+<script src="{{ url_for('static', filename='js/storage.js') }}"></script>
+<script src="{{ url_for('static', filename='js/sidebar.js') }}"></script>
+<script src="{{ url_for('static', filename='js/api.js') }}"></script>
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+<script src="{{ url_for('static', filename='js/speech.js') }}"></script>
+<script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+<script src="{{ url_for('static', filename='js/theme.js') }}"></script>
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+
+</html>
