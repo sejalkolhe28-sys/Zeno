@@ -1,4 +1,4 @@
-# 🤖 Zeno AI Project
+# 🤖 Zeno AI 
 
 Zeno AI is a modern AI chatbot built using Flask and Google's Gemini API.
 
